@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Semi-Permanent Makeup | Adhia Aesthetic Clinic</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" />
+  <style>
+    .spmu-hero {
+      background: #fff;
+      padding: 40px 0 0 0;
+      text-align: center;
+    }
+    .spmu-hero h2 {
+      color: #c59d10;
+      font-size: 2.2rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+    .spmu-hero p {
+      color: #333;
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+    .spmu-timeline-container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-top: 40px;
+      margin-bottom: 60px;
+    }
+    .spmu-timeline {
+      position: relative;
+      width: 900px;
+      max-width: 98vw;
+      margin: 0 auto;
+      padding: 40px 0;
+    }
+    .spmu-timeline:before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 0;
+      transform: translateX(-50%);
+      width: 6px;
+      height: 100%;
+      background: #c59d10;
+      border-radius: 3px;
+      z-index: 0;
+    }
+    .spmu-timeline-item {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      width: 100%;
+      margin-bottom: 60px;
+      position: relative;
+      z-index: 1;
+    }
+    .spmu-timeline-item.left {
+      flex-direction: row;
+    }
+    .spmu-timeline-item.right {
+      flex-direction: row-reverse;
+    }
+    .spmu-timeline-content {
+      background: #fff;
+      border-radius: 18px;
+      box-shadow: 0 4px 24px #c59d1040;
+      padding: 32px 28px 24px 28px;
+      max-width: 420px;
+      min-width: 320px;
+      width: 40vw;
+      margin: 0 32px;
+      position: relative;
+    }
+    .spmu-timeline-icon {
+      background: #fff;
+      border: 4px solid #c59d10;
+      color: #c59d10;
+      border-radius: 50%;
+      width: 64px;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      box-shadow: 0 2px 12px #c59d1040;
+    }
+    .spmu-timeline-item.left .spmu-timeline-icon {
+      left: calc(100% + 32px);
+      right: auto;
+    }
+    .spmu-timeline-item.right .spmu-timeline-icon {
+      left: auto;
+      right: calc(100% + 32px);
+      transform: translate(50%, -50%);
+    }
+    .spmu-timeline-end {
+      display: flex;
+      justify-content: center;
+      margin-top: 40px;
+    }
+    @media (max-width: 900px) {
+      .spmu-timeline {
+        width: 100vw;
+        padding: 0;
+      }
+      .spmu-timeline-content {
+        width: 90vw;
+        min-width: unset;
+        margin: 0 8px 0 8px;
+      }
+      .spmu-timeline-item.left .spmu-timeline-icon,
+      .spmu-timeline-item.right .spmu-timeline-icon {
+        left: 50%;
+        right: auto;
+        transform: translate(-50%, -50%);
+      }
+      .spmu-timeline-item {
+        flex-direction: column !important;
+        align-items: flex-start;
+      }
+    }
+    .spmu-btn-container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin: 40px 0 60px 0;
+    }
+    .spmu-btn {
+      background: #c59d10;
+      color: #fff;
+      padding: 18px 50px;
+      border: none;
+      font-size: 20px;
+      border-radius: 8px;
+      font-weight: 700;
+      cursor: pointer;
+      box-shadow: 0 2px 12px #c59d1040;
+      margin: 0 auto;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <!-- header (reuse your main header if needed) -->
+  <div class="spmu-hero">
+    <h2>Semi-Permanent Makeup</h2>
+    <p>Wake Up Beautiful Every Day</p>
+    <p>Professional permanent makeup services designed for precision and lasting results that enhance your natural features.</p>
+  </div>
+  <div class="spmu-timeline-container">
+    <div class="spmu-timeline">
+      <div class="spmu-timeline-item left">
+        <div class="spmu-timeline-content">
+          <span class="spmu-timeline-icon"><i class="fa-solid fa-feather"></i></span>
+          <h3>Eyebrow Microblading</h3>
+          <p>Full brows</p>
+          <ul>
+            <li>Creates natural-looking, fuller eyebrows with fine hair strokes.</li>
+            <li>Ideal for sparse or uneven brows.</li>
+            <li>Long-lasting results with minimal maintenance.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="spmu-timeline-item right">
+        <div class="spmu-timeline-content">
+          <span class="spmu-timeline-icon"><i class="fa-solid fa-grip-lines"></i></span>
+          <h3>Combination Brows</h3>
+          <p>Texture and shading</p>
+          <ul>
+            <li>Blends microblading and shading for a defined yet soft brow look.</li>
+            <li>Provides both hair-like strokes and powdery finish.</li>
+            <li>Customizable for your desired style.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="spmu-timeline-item left">
+        <div class="spmu-timeline-content">
+          <span class="spmu-timeline-icon"><i class="fa-solid fa-grip-lines-vertical"></i></span>
+          <h3>Ombre Brows</h3>
+          <p>Gradient effect</p>
+          <ul>
+            <li>Gives brows a soft, shaded gradient from light to dark.</li>
+            <li>Perfect for those who prefer a makeup-filled look.</li>
+            <li>Low maintenance and long-lasting.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="spmu-timeline-item right">
+        <div class="spmu-timeline-content">
+          <span class="spmu-timeline-icon"><i class="fa-solid fa-brush"></i></span>
+          <h3>Lip Tinting</h3>
+          <p>Color enhancement</p>
+          <ul>
+            <li>Adds natural-looking color to lips for a fresh, healthy appearance.</li>
+            <li>Enhances lip shape and symmetry.</li>
+            <li>Reduces the need for daily lipstick.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="spmu-timeline-item left">
+        <div class="spmu-timeline-content">
+          <span class="spmu-timeline-icon"><i class="fa-solid fa-droplet"></i></span>
+          <h3>Lip Neutralization</h3>
+          <p>Color correction</p>
+          <ul>
+            <li>Corrects dark or uneven lip tones.</li>
+            <li>Creates a balanced, even lip color base.</li>
+            <li>Prepares lips for further tinting if desired.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="spmu-timeline-item right">
+        <div class="spmu-timeline-content">
+          <span class="spmu-timeline-icon"><i class="fa-solid fa-eye"></i></span>
+          <h3>Eyeliner Enhancement</h3>
+          <p>Long-lasting definition</p>
+          <ul>
+            <li>Adds subtle or bold definition to the lash line.</li>
+            <li>Enhances eye shape and makes lashes appear fuller.</li>
+            <li>Smudge-proof and water-resistant for all-day wear.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="spmu-btn-container">
+    <button class="spmu-btn">Book Consultation</button>
+  </div>
+</body>
+</html>

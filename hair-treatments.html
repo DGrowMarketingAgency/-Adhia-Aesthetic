@@ -5,31 +5,73 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Hair Regrowth Treatments | Adhia Aesthetic Clinic</title>
   <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" />
   <style>
+  .sub-hero-section {
+      background: #fff;
+      padding: 40px 0 0 0;
+    }
+    .sub-hero-section h2 {
+      color: #c59d10;
+      text-align: center;
+      font-size: 2.2rem;
+      font-weight: 700;
+      margin-bottom: 30px;
+      margin-top: 0;
+    }
+    .section1 {
+      padding: 80px 0px 0 0;
+    }
+    .section1 .container {
+      display: flex;
+      flex-direction: row;
+      gap: 40px;
+      align-items: flex-start;
+      justify-content: center;
+    }
+    .section-img img {
+      width: 350px;
+      border-radius: 18px;
+      box-shadow: 0 4px 24px #c59d1040;
+    }
+    .section-text {
+      flex: 1;
+      min-width: 320px;
+    }
+    .treatment-container {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      margin-bottom: 40px;
+      align-items: stretch;
+    }
     .golden-card {
-      background: linear-gradient(135deg, #c59d10 80%, #fffbe6 100%);
+      background: #fff;
       color: #333;
       border-radius: 18px;
       box-shadow: 0 4px 24px #c59d1040;
       padding: 32px 28px 24px 28px;
-      min-width: 270px;
-      max-width: 320px;
-      flex: 1 1 270px;
+      max-width: 600px;
+      width: 90%;
       margin-bottom: 10px;
       transition: transform 0.2s, box-shadow 0.2s;
+      align-self: flex-start;
+    }
+    .golden-card:nth-child(even) {
+      align-self: flex-end;
     }
     .golden-card:hover {
       transform: translateY(-8px) scale(1.03);
       box-shadow: 0 8px 32px #c59d1080;
     }
     .golden-card h3 {
-      color: #fff;
+      color: #c59d10;
       font-size: 1.3rem;
       margin-bottom: 8px;
       font-weight: 700;
     }
     .golden-card p {
-      color: #fffbe6;
+      color: #333;
       font-size: 1.05rem;
       margin-bottom: 12px;
       font-weight: 500;
@@ -42,21 +84,6 @@
     }
     .golden-card ul li {
       margin-bottom: 6px;
-    }
-    .treatment-header {
-      color: #c59d10;
-      text-align: center;
-      font-size: 2.2rem;
-      font-weight: 700;
-      margin-bottom: 30px;
-      margin-top: 40px;
-    }
-    .treatment-container {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 30px;
-      justify-content: center;
-      margin-bottom: 40px;
     }
     .consult-btn {
       background: #c59d10;
@@ -74,55 +101,223 @@
   </style>
 </head>
 <body>
-  <div class="container">
-    <h2 class="treatment-header">Proven Solutions for Hair Regrowth</h2>
-    <div class="treatment-container">
-      <div class="golden-card">
-        <h3>Hair PRP Therapy</h3>
-        <p>Natural regrowth stimulation</p>
-        <ul>
-          <li>Uses your own platelet-rich plasma to activate hair follicles.</li>
-          <li>Promotes natural, healthy hair regrowth.</li>
-          <li>Minimally invasive and safe.</li>
-          <li>Ideal for early-stage hair thinning.</li>
-          <li>Boosts scalp health and density.</li>
-        </ul>
+  <!-- header -->
+  <div class="header-info">
+    <div class="container">
+      <div class="logo">
+        <a href="#"><img src="./imgs/Logo.png" alt="logo" /></a>
       </div>
-      <div class="golden-card">
-        <h3>Hair GFC Treatment</h3>
-        <p>Advanced growth factors</p>
-        <ul>
-          <li>Delivers concentrated growth factors to the scalp.</li>
-          <li>Enhances hair density and strength.</li>
-          <li>Faster, visible results for thinning hair.</li>
-          <li>Non-surgical and comfortable.</li>
-          <li>Scientifically proven for hair restoration.</li>
-        </ul>
+      <div class="add-cont">
+        <a href="">
+          <i class="fa-solid fa-location-dot"></i>
+          184, MGY Babu St., Janaki Na Nagar, Alwartirunagar, Valasaravakkam,
+          Chennai - 600087
+        </a>
+        <div class="info-cont">
+          <a href="#"><i class="fa-solid fa-envelope"></i>infoadhiaclinic@gmail.com</a>
+          <a href="#"><i class="fa-solid fa-phone-volume"></i>+91 86 8000 1515</a>
+        </div>
       </div>
-      <div class="golden-card">
-        <h3>Oxygen Laser Therapy</h3>
-        <p>Scalp rejuvenation</p>
-        <ul>
-          <li>Combines oxygen infusion and laser technology.</li>
-          <li>Revitalizes the scalp and improves blood flow.</li>
-          <li>Boosts hair health for better regrowth.</li>
-          <li>Painless and relaxing sessions.</li>
-          <li>Suitable for all hair types.</li>
-        </ul>
+      <div class="social">
+        <a href="#"><div class="insta"><i class="fa-brands fa-instagram"></i></div>Instagram</a>
+        <a href="#"><div class="whats"><i class="fa-brands fa-whatsapp"></i></div>Whats App</a>
       </div>
-      <div class="golden-card">
-        <h3>Combination Therapies</h3>
-        <p>Maximized results</p>
+    </div>
+  </div>
+  <header>
+    <div class="container">
+      <div class="menus">
         <ul>
-          <li>Integrates multiple advanced treatments for best outcomes.</li>
-          <li>Personalized to your unique needs.</li>
-          <li>Maximizes hair regrowth and scalp health.</li>
-          <li>Comprehensive, doctor-guided approach.</li>
-          <li>Long-lasting, natural-looking results.</li>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About us</a></li>
+          <li><a href="#">Service</a></li>
+          <li><a href="#">Testimonial</a></li>
+          <li><a href="#">Contact us</a></li>
         </ul>
       </div>
     </div>
+  </header>
+  <!-- header -->
+  <div class="sub-hero-section">
+    <div class="container">
+      <h2>Hair Regrowth Treatments</h2>
+    </div>
+  </div>
+  <div class="timeline-container">
+    <div class="timeline">
+      <div class="timeline-item left">
+        <div class="timeline-content">
+          <span class="timeline-icon"><i class="fa-solid fa-flask"></i></span>
+          <h3>Hair PRP Therapy</h3>
+          <p>Natural regrowth stimulation</p>
+          <ul>
+            <li>Uses your own platelet-rich plasma to activate hair follicles.</li>
+            <li>Promotes natural, healthy hair regrowth.</li>
+            <li>Minimally invasive and safe.</li>
+            <li>Ideal for early-stage hair thinning.</li>
+            <li>Boosts scalp health and density.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="timeline-item right">
+        <div class="timeline-content">
+          <span class="timeline-icon"><i class="fa-solid fa-dna"></i></span>
+          <h3>Hair GFC Treatment</h3>
+          <p>Advanced growth factors</p>
+          <ul>
+            <li>Delivers concentrated growth factors to the scalp.</li>
+            <li>Enhances hair density and strength.</li>
+            <li>Faster, visible results for thinning hair.</li>
+            <li>Non-surgical and comfortable.</li>
+            <li>Scientifically proven for hair restoration.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="timeline-item left">
+        <div class="timeline-content">
+          <span class="timeline-icon"><i class="fa-solid fa-lightbulb"></i></span>
+          <h3>Oxygen Laser Therapy</h3>
+          <p>Scalp rejuvenation</p>
+          <ul>
+            <li>Combines oxygen infusion and laser technology.</li>
+            <li>Revitalizes the scalp and improves blood flow.</li>
+            <li>Boosts hair health for better regrowth.</li>
+            <li>Painless and relaxing sessions.</li>
+            <li>Suitable for all hair types.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="timeline-item right">
+        <div class="timeline-content">
+          <span class="timeline-icon"><i class="fa-solid fa-layer-group"></i></span>
+          <h3>Combination Therapies</h3>
+          <p>Maximized results</p>
+          <ul>
+            <li>Integrates multiple advanced treatments for best outcomes.</li>
+            <li>Personalized to your unique needs.</li>
+            <li>Maximizes hair regrowth and scalp health.</li>
+            <li>Comprehensive, doctor-guided approach.</li>
+            <li>Long-lasting, natural-looking results.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="consult-btn-container">
     <button class="consult-btn">Consult & Book Appointment</button>
   </div>
-</body>
+  <style>
+    .consult-btn-container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin: 40px 0 60px 0;
+    }
+    .timeline-container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-top: 40px;
+      margin-bottom: 60px;
+    }
+    .timeline {
+      position: relative;
+      width: 900px;
+      max-width: 98vw;
+      margin: 0 auto;
+      padding: 40px 0;
+    }
+    .timeline:before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 0;
+      transform: translateX(-50%);
+      width: 6px;
+      height: 100%;
+      background: #c59d10;
+      border-radius: 3px;
+      z-index: 0;
+    }
+    .timeline-item {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      width: 100%;
+      margin-bottom: 60px;
+      position: relative;
+      z-index: 1;
+    }
+    .timeline-item.left {
+      flex-direction: row;
+    }
+    .timeline-item.right {
+      flex-direction: row-reverse;
+    }
+    .timeline-content {
+      background: #fff;
+      border-radius: 18px;
+      box-shadow: 0 4px 24px #c59d1040;
+      padding: 32px 28px 24px 28px;
+      max-width: 420px;
+      min-width: 320px;
+      width: 40vw;
+      margin: 0 32px;
+      position: relative;
+    }
+    .timeline-icon {
+      background: #fff;
+      border: 4px solid #c59d10;
+      color: #c59d10;
+      border-radius: 50%;
+      width: 64px;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      box-shadow: 0 2px 12px #c59d1040;
+    }
+    .timeline-item.left .timeline-icon {
+      left: calc(100% + 32px);
+      right: auto;
+    }
+    .timeline-item.right .timeline-icon {
+      left: auto;
+      right: calc(100% + 32px);
+      transform: translate(50%, -50%);
+    }
+    .timeline-end {
+      display: flex;
+      justify-content: center;
+      margin-top: 40px;
+    }
+    @media (max-width: 900px) {
+      .timeline {
+        width: 100vw;
+        padding: 0;
+      }
+      .timeline-content {
+        width: 90vw;
+        min-width: unset;
+        margin: 0 8px 0 8px;
+      }
+      .timeline-item.left .timeline-icon,
+      .timeline-item.right .timeline-icon {
+        left: 50%;
+        right: auto;
+        transform: translate(-50%, -50%);
+      }
+      .timeline-item {
+        flex-direction: column !important;
+        align-items: flex-start;
+      }
+    }
+  </style>
+  </body>
 </html>

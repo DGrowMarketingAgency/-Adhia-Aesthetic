@@ -61,7 +61,7 @@
               <div class="sub" onclick="openSubMenu()">Service</div>
               <div class="sub-menu">
                 <a class="sub-list" href="./skin.html"> Skin Treatments</a>
-                <a class="sub-list" href="">Hair Regrowth Treatments</a>
+                <a class="sub-list" href="hair-treatments.html">Hair Regrowth Treatments</a>
                 <a class="sub-list" href="">Semi-Permanent Makeup</a>
                 <a class="sub-list" href="">Dental Care </a>
               </div>
@@ -184,7 +184,7 @@
     </div>
     <!-- hero -->
     <!-- section 1 -->
-    <div class="section1">
+    <div class="section1" id="section1-main">
       <div class="section-title">
         <h2 class="center-title">
           The Story Behind <span>Every Transformation</span>
@@ -199,7 +199,6 @@
           didn't work. By evening, they leave with something precious - hope.
         </p>
       </div>
-
       <div class="container">
         <div class="section-img">
           <img src="./imgs/section-1img.png" alt="" />
@@ -240,16 +239,17 @@
               </div>
             </li>
           </ul>
-
-          <a href="#" class="btn"
-            >Discover the Adhia Approach
-            <div class="btn-icon">
-              <i class="fa-solid fa-arrow-right"></i></div
-          ></a>
+          <button id="get-hair-assessment" type="button" style="margin-top: 20px; background: #333; color: #fff; padding: 15px 40px; border: none; font-size: 18px; cursor: pointer; border-radius: 6px; font-weight: 600;">Get Hair Assessment</button>
+          <script>
+            document.getElementById('get-hair-assessment').onclick = function() {
+              window.location.href = 'hair-treatments.html';
+            };
+          </script>
         </div>
       </div>
     </div>
     <!-- section 1 -->
+  <!-- removed old inline hair assessment section -->
     <!-- Statistics -->
     <div class="container">
       <div class="statistics">
@@ -426,35 +426,97 @@
       </div>
     </div>
     <div class="google-review-con">
-      <div class="review-card">
-        <div class="review-header">
-          <div class="profile-pic">K</div>
-          <div class="review-info">
-            <h4>Keerthi</h4>
-            <div class="stars">★★★★★</div>
-          </div>
-        </div>
-        <p>
-          I have consulted Dr. Hindia for the Hydra Facial treatment, and I’m in
-          love with the results! My skin feels fresh, clean, and deeply
-          nourished. She made sure I was comfortable during the entire
-          procedure. Best facial experience I’ve had—my skin has never looked
-          better!
+        <p class="center-para">
+          Restore Your Crown of Confidence<br>
+          Advanced hair restoration techniques that work with your body's natural healing processes to bring back thick, healthy hair.
         </p>
-      </div>
-
-      <div class="review-card">
-        <div class="review-header">
-          <div class="profile-pic">Y</div>
-          <div class="review-info">
-            <h4>Yazhini</h4>
-            <div class="stars">★★★★★</div>
+        <h3 style="color: #c59d10; text-align:center; font-size:1.5rem; font-weight:700; margin-bottom: 30px;">Proven Solutions for Hair Regrowth</h3>
+        <div style="display: flex; flex-wrap: wrap; gap: 30px; justify-content: center; margin-bottom: 40px;">
+          <div class="golden-card">
+            <h3>Hair PRP Therapy</h3>
+            <p>Natural regrowth stimulation</p>
+            <ul>
+              <li>Uses your own platelet-rich plasma to activate hair follicles.</li>
+              <li>Promotes natural, healthy hair regrowth.</li>
+              <li>Minimally invasive and safe.</li>
+              <li>Ideal for early-stage hair thinning.</li>
+              <li>Boosts scalp health and density.</li>
+            </ul>
+          </div>
+          <div class="golden-card">
+            <h3>Hair GFC Treatment</h3>
+            <p>Advanced growth factors</p>
+            <ul>
+              <li>Delivers concentrated growth factors to the scalp.</li>
+              <li>Enhances hair density and strength.</li>
+              <li>Faster, visible results for thinning hair.</li>
+              <li>Non-surgical and comfortable.</li>
+              <li>Scientifically proven for hair restoration.</li>
+            </ul>
+          </div>
+          <div class="golden-card">
+            <h3>Oxygen Laser Therapy</h3>
+            <p>Scalp rejuvenation</p>
+            <ul>
+              <li>Combines oxygen infusion and laser technology.</li>
+              <li>Revitalizes the scalp and improves blood flow.</li>
+              <li>Boosts hair health for better regrowth.</li>
+              <li>Painless and relaxing sessions.</li>
+              <li>Suitable for all hair types.</li>
+            </ul>
+          </div>
+          <div class="golden-card">
+            <h3>Combination Therapies</h3>
+            <p>Maximized results</p>
+            <ul>
+              <li>Integrates multiple advanced treatments for best outcomes.</li>
+              <li>Personalized to your unique needs.</li>
+              <li>Maximizes hair regrowth and scalp health.</li>
+              <li>Comprehensive, doctor-guided approach.</li>
+              <li>Long-lasting, natural-looking results.</li>
+            </ul>
           </div>
         </div>
-        <p>
-          I was having severe hair fall for few months as I moved from my city
-          to Chennai… I visited Adhia clinic through Google. Doctor explained
-          everything about the reasons and treatment. I’ve completed 3 sessions
+        <button class="consult-btn" style="background: #c59d10; color: #fff; padding: 18px 50px; border: none; font-size: 20px; border-radius: 8px; font-weight: 700; cursor: pointer; box-shadow: 0 2px 12px #c59d1040; margin: 0 auto; display: block;">Consult & Book Appointment</button>
+        <style>
+          .golden-card {
+            background: linear-gradient(135deg, #c59d10 80%, #fffbe6 100%);
+            color: #333;
+            border-radius: 18px;
+            box-shadow: 0 4px 24px #c59d1040;
+            padding: 32px 28px 24px 28px;
+            min-width: 270px;
+            max-width: 320px;
+            flex: 1 1 270px;
+            margin-bottom: 10px;
+            transition: transform 0.2s, box-shadow 0.2s;
+          }
+          .golden-card:hover {
+            transform: translateY(-8px) scale(1.03);
+            box-shadow: 0 8px 32px #c59d1080;
+          }
+          .golden-card h3 {
+            color: #fff;
+            font-size: 1.3rem;
+            margin-bottom: 8px;
+            font-weight: 700;
+          }
+          .golden-card p {
+            color: #fffbe6;
+            font-size: 1.05rem;
+            margin-bottom: 12px;
+            font-weight: 500;
+          }
+          .golden-card ul {
+            padding-left: 18px;
+            color: #333;
+            font-size: 1rem;
+            margin-bottom: 0;
+          }
+          .golden-card ul li {
+            margin-bottom: 6px;
+          }
+        </style>
           of hair GFC and can see a gradual reduction in hair fall.
         </p>
       </div>
@@ -629,7 +691,58 @@
     <!-- footer -->
 
     <!-- js -->
+    <script>
+      // Ensure button navigation works for all browsers
+      document.addEventListener('DOMContentLoaded', function() {
+        var btn = document.getElementById('get-hair-assessment');
+        if (btn) {
+          btn.onclick = function() {
+            window.location.href = 'hair-treatments.html';
+          };
+        }
+      });
+    </script>
     <script src="./main.js"></script>
+    <style>
+      .golden-card {
+        background: linear-gradient(135deg, #c59d10 80%, #fffbe6 100%);
+        color: #333;
+        border-radius: 18px;
+        box-shadow: 0 4px 24px #c59d1040;
+        padding: 32px 28px 24px 28px;
+        min-width: 270px;
+        max-width: 320px;
+        flex: 1 1 270px;
+        margin-bottom: 10px;
+        transition: transform 0.2s, box-shadow 0.2s;
+      }
+      .golden-card:hover {
+        transform: translateY(-8px) scale(1.03);
+        box-shadow: 0 8px 32px #c59d1080;
+      }
+      .golden-card h3 {
+        color: #fff;
+        font-size: 1.3rem;
+        margin-bottom: 8px;
+        font-weight: 700;
+      }
+      .golden-card p {
+        color: #fffbe6;
+        font-size: 1.05rem;
+        margin-bottom: 12px;
+        font-weight: 500;
+      }
+      .golden-card ul {
+        padding-left: 18px;
+        color: #333;
+        font-size: 1rem;
+        margin-bottom: 0;
+      }
+      .golden-card ul li {
+        margin-bottom: 6px;
+      }
+    </style>
+  <!-- script removed: navigation now handled inline with button -->
     <!--  -->
   </body>
 </html>

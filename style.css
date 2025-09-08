@@ -1,3 +1,98 @@
+/* Responsive header and navigation */
+@media (max-width: 900px) {
+  .header-info .container, header .container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .logo img {
+    width: 120px;
+  }
+  .add-cont {
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .info-cont {
+    flex-direction: column;
+    gap: 5px;
+  }
+  .social {
+    flex-direction: row;
+    gap: 10px;
+  }
+}
+@media (max-width: 700px) {
+  .header-info .container, header .container {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 10px 0;
+  }
+  .menus ul {
+    flex-direction: column;
+    gap: 0;
+    width: 100%;
+    padding: 0;
+  }
+  .menus ul li {
+    width: 100%;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+  }
+  .menus ul li:last-child {
+    border-bottom: none;
+  }
+}
+
+/* Responsive grid and cards */
+@media (max-width: 900px) {
+  .treatments-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+  }
+}
+@media (max-width: 600px) {
+  .treatments-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .treatment-card {
+    padding: 16px 8px 14px 8px;
+  }
+  .treatment-icon {
+    width: 36px;
+    height: 36px;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+  .treatment-card h3 {
+    font-size: 1.1rem;
+  }
+  .treatment-sub {
+    font-size: 0.95rem;
+  }
+  .treatment-card ul li {
+    font-size: 0.95rem;
+  }
+}
+
+/* Responsive hero/section titles */
+@media (max-width: 600px) {
+  .skin-hero h2, .dental-hero h2, .spmu-hero h2 {
+    font-size: 1.3rem;
+  }
+  .skin-hero p, .dental-hero p, .spmu-hero p {
+    font-size: 1rem;
+  }
+}
+
+/* Responsive container width */
+@media (max-width: 700px) {
+  .container {
+    width: 96%;
+    padding: 0 2%;
+  }
+}
 /* Modern Treatments Grid */
 .treatments-grid {
   display: grid;

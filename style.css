@@ -1,3 +1,76 @@
+/* Modern Treatments Grid */
+.treatments-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 32px;
+  margin: 40px 0 60px 0;
+}
+.treatment-card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px #c59d1040;
+  padding: 32px 28px 28px 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: transform 0.2s, box-shadow 0.2s;
+  border: 2px solid #f5e6c2;
+  position: relative;
+}
+.treatment-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 8px 32px #c59d1040;
+  border-color: var(--gold-color);
+}
+.treatment-icon {
+  background: var(--gold-light-color);
+  color: var(--gold-color);
+  border-radius: 50%;
+  width: 54px;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  margin-bottom: 18px;
+  box-shadow: 0 2px 8px #c59d1040;
+}
+.treatment-card h3 {
+  font-size: 1.35rem;
+  font-family: var(--poppins-font);
+  color: var(--gold-color);
+  margin-bottom: 8px;
+}
+.treatment-sub {
+  font-size: 1.05rem;
+  color: #333;
+  margin-bottom: 12px;
+  font-family: var(--lato-font);
+}
+.treatment-card ul {
+  padding-left: 18px;
+  margin-bottom: 0;
+}
+.treatment-card ul li {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 7px;
+  font-family: var(--lato-font);
+}
+@media (max-width: 700px) {
+  .treatments-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .treatment-card {
+    padding: 22px 12px 18px 12px;
+  }
+  .treatment-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 1.3rem;
+  }
+}
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 
 * {

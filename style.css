@@ -1,3 +1,65 @@
+/* --- Mobile Navigation Hamburger --- */
+.mobile-nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: var(--white-color);
+  position: absolute;
+  right: 24px;
+  top: 18px;
+  z-index: 2000;
+}
+
+@media (max-width: 700px) {
+  .mobile-nav-toggle {
+    display: block;
+  }
+  .menus ul {
+    display: none;
+    flex-direction: column;
+    background: var(--black-color);
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100vw;
+    z-index: 1500;
+    box-shadow: 0 8px 24px #0002;
+  }
+  .menus ul.active {
+    display: flex;
+  }
+  header {
+    position: relative;
+  }
+}
+
+/* Responsive container for all sections */
+@media (max-width: 600px) {
+  .container, .section1 .container, .skin-hero, .dental-hero, .spmu-hero {
+    width: 100% !important;
+    padding: 0 6px !important;
+    margin: 0 !important;
+    box-sizing: border-box;
+  }
+  section, .section1, .skin-hero, .dental-hero, .spmu-hero {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+
+/* Responsive blockquotes and FAQ */
+@media (max-width: 600px) {
+  blockquote {
+    font-size: 1rem;
+    margin: 10px 0;
+    padding: 10px 12px;
+  }
+  #faq ul, #why-us ul {
+    padding-left: 18px;
+    font-size: 1rem;
+  }
+}
 /* Responsive header and navigation */
 @media (max-width: 900px) {
   .header-info .container, header .container {

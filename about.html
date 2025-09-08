@@ -52,14 +52,25 @@
       </div>
     </div>
     <header>
-      <div class="container">
+      <div class="container" style="position:relative;">
+        <button class="mobile-nav-toggle" aria-label="Open navigation" onclick="document.querySelector('.menus ul').classList.toggle('active')">
+          <i class="fa fa-bars"></i>
+        </button>
         <div class="menus">
           <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Service</a></li>
-            <li><a href="#">Testimonial</a></li>
-            <li><a href="#">Contact us</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li>
+              <div class="sub" onclick="openSubMenu && openSubMenu()">Service</div>
+              <div class="sub-menu">
+                <a class="sub-list" href="skin.html"> Skin Treatments</a>
+                <a class="sub-list" href="hair-treatments.html">Hair Regrowth Treatments</a>
+                <a class="sub-list" href="semi-permanent-makeup.html">Semi-Permanent Makeup</a>
+                <a class="sub-list" href="dental-care.html">Dental Care</a>
+              </div>
+            </li>
+            <li><a href="testimonial.html">Testimonial</a></li>
+            <li><a href="contact.html">Contact us</a></li>
           </ul>
         </div>
       </div>
